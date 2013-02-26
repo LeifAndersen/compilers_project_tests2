@@ -1,0 +1,13 @@
+(program
+ (= (x) (list i (for i (indexed range (called 10)) ())))
+ (=
+  (y)
+  (list
+   (term i ("*" 2))
+   (for
+    i
+    (indexed range (called 100))
+    (if (or (comparison i ("<" 20)) (comparison i (">" 40))) none))))
+ (= (z) (set z (for z (indexed range (called 10)) ())))
+ (= (x) (dict (z 2) (for z (indexed range (called 50)) ()))))
+
