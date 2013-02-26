@@ -1,0 +1,5 @@
+(program
+ (def (a) (suite (pass)))
+ (def (a x) (suite (return x)))
+ (def (c x y) (suite (return (term x ("*" y))))))
+

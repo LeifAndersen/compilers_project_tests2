@@ -1,0 +1,34 @@
+(program
+ (= (x) (dict))
+ (= (x) (list))
+ (= (x) (tuple))
+ (def (a) (pass))
+ (def (a) (expr (lambda () 3)))
+ (expr (indexed a (called) (called)))
+ (= (z) 1)
+ (= (z) (tuple 1))
+ (= (z) (tuple 1 1))
+ (= (z) (tuple 1 1))
+ (= (z) (tuple 1 1 1))
+ (= (y) (list 1))
+ (= (y) (list 1))
+ (= (y) (list 1 1))
+ (= (y) (list 1 1))
+ (= (y) (list 1 1 1))
+ (= (y) (list))
+ (def (a a) (pass))
+ (def (a a) (pass))
+ (def (a a a a) (pass))
+ (for
+  i
+  (list 1 23 4 6)
+  (suite
+   (for
+    j
+    (list 1 2)
+    (suite
+     (for
+      k
+      (indexed range (called 50))
+      (suite (expr (indexed print (called (term i ("*" j) ("*" k))))))))))))
+
