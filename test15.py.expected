@@ -1,0 +1,2 @@
+(program (try (suite (pass)) (((except) (suite (pass)))) #f #f))
+
